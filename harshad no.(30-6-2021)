@@ -1,0 +1,32 @@
+import java.util.*;
+class harshad
+{
+
+public static void main(String args[])
+{
+Scanner sc=new Scanner(System.in);
+int n =sc.nextInt();
+int rem=0,sum=0,
+total=n;
+while(n>0)
+{
+rem=n%10;
+sum=sum+rem;
+n/=10;
+}
+
+if(total%sum==0)
+{
+System.out.println("harshad no");
+}
+
+else
+{
+
+System.out.println("not harshad no");
+}
+
+
+}
+}
+
