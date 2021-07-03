@@ -1,0 +1,21 @@
+import java.util.*;
+class automorphic
+
+{
+  
+public static void main(String args[])
+{
+Scanner sc =new Scanner(System.in);
+ int m=sc.nextInt();
+int a=m*m;
+
+if(m%10==a%10)
+System.out.print("automorphic");
+else
+System.out.print(" not automorphic");
+
+
+}
+}
+
+
