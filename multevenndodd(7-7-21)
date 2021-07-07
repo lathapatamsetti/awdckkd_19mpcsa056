@@ -1,0 +1,43 @@
+import java.util.*;
+class evenndodd
+{
+public static void main(String arg[])
+{
+Scanner sc=new Scanner(System.in);
+System.out.print("enter array size");
+int n=sc.nextInt();
+int ar[]=new int[n];
+int i,evencount=0,oddcount=0,mult=1;
+System.out.print("enter array elements");
+for( i=0;i<n;i++)
+{
+ar[i]=sc.nextInt();
+}
+for(i=0;i<n;i++)
+{
+if(ar[i]%2==0)
+{
+evencount++;
+}
+else
+{
+oddcount++;
+}
+mult=evencount * oddcount;
+}
+System.out.println("number of even numbers="+evencount);
+System.out.println("number of odd numbers="+oddcount);
+System.out.print("multiplication of even nd odd numbers="+mult);
+if(mult%2==0)
+System.out.print("even no");
+else
+System.out.print("odd no");
+}                                                                   
+}                                                                                                                    
+
+
+
+
+
+
+  
