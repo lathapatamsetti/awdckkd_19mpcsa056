@@ -1,0 +1,30 @@
+import java.util.*;
+class stringnum
+{
+public static void main(String args[])
+{
+Scanner sc=new Scanner(System.in);
+String str;
+System.out.print("enter string");
+str=sc.nextLine();
+int u=0,v=0,w=0;
+char ch[]=str.toCharArray();
+for(int i=0;i<ch.length;i++)
+{
+if(Character.isLowerCase(ch[i]))
+u++;
+else if(Character.isDigit(ch[i]))
+v++;
+else
+w++;
+}
+System.out.println("total no ofLower:"+u);
+System.out.println("total no of Digits:"+v);
+System.out.println("total no of symbols:"+w);
+  
+if((u==v)&&(v==w))
+System.out.print("s");
+else
+System.out.print("no");
+}
+}
