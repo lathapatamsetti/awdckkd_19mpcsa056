@@ -1,0 +1,27 @@
+import java.util.*;
+class framework
+{
+public static void main(String args[])
+{
+ArrayList<Integer> a1=new ArrayList<Integer>();
+ArrayList<Integer> a2=new ArrayList<Integer>();
+ArrayList<Integer> a=new ArrayList<Integer>();
+a1.add(10);
+a1.add(20);
+a1.add(30);
+a1.add(40);
+System.out.print(a1);
+a2.add(100);
+a2.add(200);
+a2.add(300);
+a2.add(400);
+System.out.print(a2);
+a.addAll(a1);
+a.addAll(a2);
+Collections.sort(a);
+System.out.print(a);
+}
+}
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+output:
+[10,20,30,40] [100,200,300,400] [10,20,30,40,100,200,300,400]
