@@ -1,0 +1,39 @@
+import java.util.*;
+class arraylist1
+{
+public static void main(String args[])
+{
+Scanner sc=new Scanner(System.in);
+int n;
+ArrayList<Integer> x=new ArrayList<Integer>();
+System.out.println("enter n value");
+n=sc.nextInt();
+for(int i=0;i<n;i++)
+{
+x.add(sc.nextInt());
+}
+for(Integer i:x)
+{
+System.out.print(i);
+}
+for(int i=0;i<n;i++)
+{
+if(x.contains(i))
+{
+x.set(i,100);
+System.out.print(x);
+}
+else
+{
+System.out.print("false");
+}
+}
+}}
+
+
+
+
+
+
+
+
