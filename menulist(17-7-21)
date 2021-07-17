@@ -1,0 +1,46 @@
+import java.util.*;
+public class menulist
+{
+public static void main(String args[])
+{
+Scanner sc=new Scanner(System.in);
+LinkedList<Integer> a=new LinkedList<Integer>();
+int n,ch;
+do
+{
+System.out.println("1.BeginInsert\n2.EndInsert\n3.PositionInsert\n4.BeginDelete\n5.EndDelete\n6.PositionDelete\n7.Display\n8.Exit");
+ch=sc.nextInt();
+switch(ch)
+{
+case 1:System.out.println("enter n value");
+n=sc.nextInt();
+a.addFirst(n);
+break;
+case 2:System.out.println("enter n value");
+n=sc.nextInt();
+a.addLast(n);
+break;
+case 3:System.out.println("enter n value");
+n=sc.nextInt();
+a.add(2,n);
+break;
+case 4:System.out.println("enter n value");
+n=sc.nextInt();
+a.removeFirst(n);
+break;
+case 5:System.out.println("enter n value");
+n=sc.nextInt();
+a.removeLast(n);
+break;
+case 6:System.out.println("enter n value");
+n=sc.nextInt();
+a.remove(4);
+break;
+case 7:System.out.println(a);
+default:System.out.println("invalid choice");
+}
+System.out.println("1.BeginInsert\n2.EndInsert\n3.PositionInsert\n4.BeginDelete\n6.PositionDelete\n7.Display\n8.Exit");
+ch=sc.nextInt();
+}
+while(ch<8);}
+}
