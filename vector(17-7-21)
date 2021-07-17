@@ -1,0 +1,22 @@
+import java.util.*;
+public class vector
+{
+public static void main(String args[])
+{
+Vector v=new Vector();
+Scanner sc=new Scanner(System.in);
+
+int n=6;
+v.add(101);
+v.add("rama");
+v.add(6.58);
+v.add(102);
+v.add("gita");
+v.add(8.98);
+System.out.println(v);
+v.remove(4);
+System.out.println(v);
+v.set(2,9.17);
+System.out.print(v);
+System.out.print(v.contains("sita"));
+}}
