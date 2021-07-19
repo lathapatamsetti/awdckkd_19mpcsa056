@@ -1,0 +1,21 @@
+import java.util.*;
+class duplicate
+{
+public static void main(String args[])
+{
+HashMap<Integer,Integer> x=new HashMap<Integer,Integer>();
+int[] arr={2,3,4,5,3,5,6,7};
+for(int i=0;i<arr.length;i++)
+{
+if(x.containsKey(arr[i]))
+x.put(arr[i],x.get(arr[i])+1);
+else
+x.put(arr[i],1);
+}
+System.out.println(x);
+}
+}
+
+-------------------------------------------------------------------------------------
+output:
+{2=1,3=2,4=1,5=2,6=1,7=1}
