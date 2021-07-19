@@ -1,0 +1,30 @@
+import java.util.*;
+public class map1
+{
+public static void main(String args[])
+{
+HashMap<Integer,String> x=new HashMap<Integer,String>();
+Scanner sc=new Scanner(System.in);
+int n;
+int key;
+String value;
+System.out.println("enter n value");
+n=sc.nextInt();
+TreeMap<Integer,String> a=new TreeMap<Integer,String>(x);
+for(int i=0;i<n;i++)
+{
+key=sc.nextInt();
+value=sc.next();
+a.put(key,value);
+}
+System.out.println(a);
+}
+}
+-----------------------------------------------------------------------------------------
+output:
+enter n value:3
+5 sam
+78 ram
+10 seeta
+
+{5=sam,10=seeta,78=ram}
