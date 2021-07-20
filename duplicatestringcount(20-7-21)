@@ -1,0 +1,37 @@
+import java.util.*; 
+class duplicatestring
+{
+public static void main(String args[])
+{ 
+HashMap<String,Integer> x=new HashMap<String,Integer>();
+Scanner sc=new Scanner(System.in);
+System.out.println("enter k values");
+int k=sc.nextInt();
+String[] arr=new String[k];
+for(int i=0;i<k;i++)
+{
+arr[i]=sc.next();
+}
+
+for(int i=0;i<arr.length;i++) 
+{
+String key;
+key=arr[i];
+if(x.containsKey(key)) 
+x.put(key,x.get(key)+1); 
+else 
+x.put(key,1);
+} 
+for(String i:x.keySet())
+{if(x.get(i)>2)
+System.out.println(i+"="+x.get(i)+" "); 
+}
+}
+}
+------------------------------------------
+output:
+enter k values:3
+ram
+ram
+sita
+ram=3
