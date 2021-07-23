@@ -1,0 +1,23 @@
+import java.util.*;
+class revstring
+{
+public static void main(String args[])
+{
+Scanner sc=new Scanner(System.in);
+int j;
+Stack<Character> s=new Stack<Character>();
+System.out.println("enter string");
+String str=sc.next();
+char[] ch = str.toCharArray();
+int n = ch.length;
+for(j=0;j<n;j++)
+{s.push(ch[j]);}
+for(j=0;j<n;j++)
+System.out.print(s.pop());
+}
+}
+----------------------------------------------------------------------------------
+output:
+enter string
+welcome
+emoclew
