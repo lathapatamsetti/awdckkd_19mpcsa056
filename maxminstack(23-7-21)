@@ -1,0 +1,23 @@
+import java.util.*;
+class maxminstack
+{
+public static void main(String args[])
+{
+Scanner sc=new Scanner(System.in);
+Stack <Integer> a=new Stack<Integer>();
+System.out.print("enter size");
+int n=sc.nextInt();
+System.out.print("enter n svalues");
+for(int i=0;i<n;i++)
+{
+a.push(sc.nextInt());
+}
+System.out.print("Max ="+Collections.max(a));
+System.out.print("Min ="+Collections.min(a));
+}
+}
+----------------------------------------
+output:
+enter size 3
+enter n svalues 40 50 60
+max=60 min=40
